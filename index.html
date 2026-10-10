@@ -1,109 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RSAM Travels and General Merchant Limited - Travel enquiries, booking assistance and general merchant services.">
-  <title>RSAM Travels and General Merchant Limited</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #f5f7f5;
-    }
-    header {
-      background: #075b3a;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    nav {
-      background: #d6ad45;
-      padding: 12px;
-      text-align: center;
-    }
-    nav a {
-      color: #222;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-    main {
-      max-width: 850px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      background: white;
-      margin: 18px 0;
-      padding: 22px;
-      border-radius: 10px;
-    }
-    h2 {
-      color: #075b3a;
-    }
-    .contact a {
-      color: #075b3a;
-      overflow-wrap: anywhere;
-    }
-    footer {
-      background: #075b3a;
-      color: white;
-      text-align: center;
-      padding: 18px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>RSAM Travels and General Merchant Limited</h1>
-    <p>Your Trusted Travel and General Services Partner</p>
-    <p>RC Number: 9872335</p>
-  </header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RSAM Travels and General Merchant Limited. Flight bookings, Hajj and Umrah, hotel enquiries, visa guidance and student travel in Kaduna, Nigeria.">
+<meta name="theme-color" content="#061a43">
+<title>RSAM Travels and General Merchant Limited</title>
 
+<style>
+:root {
+  --navy: #061a43;
+  --blue: #104b8e;
+  --gold: #f5c343;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #1d293b;
+  background: #f5f7fb;
+}
+.topbar {
+  background: #020b20;
+  color: white;
+  padding: 9px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 17px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  font-size: 30px;
+  font-weight: bold;
+  animation: float 4s ease-in-out infinite;
+}
+.brand-name {
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.brand small {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--gold);
+}
+.hero {
+  padding: 65px 6%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+  color: white;
+  background: linear-gradient(120deg, #020b20, #104b8e);
+}
+.kicker {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: clamp(35px, 5vw, 58px);
+  line-height: 1.15;
+  margin: 15px 0;
+}
+.hero p {
+  color: #e5edf9;
+  font-size: 17px;
+}
+.hero-logo {
+  border: 3px solid var(--gold);
+  border-radius: 20px;
+  text-align: center;
+  padding: 25px 12px;
+  background: #ffffff0d;
+  animation: float 4s ease-in-out infinite;
+}
+.globe {
+  font-size: 85px;
+  line-height: 1.4;
+}
+.hero-logo strong {
+  display: block;
+  color: var(--gold);
+  font-size: 25px;
+}
+.hero-logo small {
+  letter-spacing: 1px;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.btn {
+  display: inline-block;
+  margin: 8px 7px 0 0;
+  padding: 12px 18px;
+  border-radius: 7px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn-blue {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--gold);
+}
+section {
+  padding: 58px 6%;
+}
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+.section-heading h2,
+.about h2 {
+  color: var(--navy);
+  font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.2;
+}
+.section-heading p {
+  color: #65738a;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #061a4314;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card img {
+  width: 100%;
+  height: 210px;
+  display: block;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+}
+.card h3 {
+  color: var(--navy);
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+.card p {
+  color: #65738a;
+  margin: 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 13px;
+  color: #075b9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+  align-items: center;
+  background: white;
+}
+.about img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.about p, .about li {
+  color: #65738a;
+}
+.about li {
+  margin-bottom: 7px;
+}
+.contact {
+  color: white;
+  background: linear-gradient(130deg, #061a43, #104b8e);
+}
+.contact .section-heading h2 {
+  color: white;
+}
+.contact .section-heading p {
+  color: #e0e8f8;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: auto;
+}
+.contact-box {
+  padding: 22px;
+  background: #ffffff12;
+  border: 1px solid #ffffff35;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+.contact-box h3 {
+  color: var(--gold);
+  margin-top: 0;
+}
+.contact-box a {
+  color: white;
+}
+footer {
+  padding: 25px 5%;
+  text-align: center;
+  background: #020b20;
+  color: #dce5f5;
+  font-size: 13px;
+}
+footer strong {
+  color: var(--gold);
+}
+.whatsapp-float {
+  position: fixed;
+  right: 17px;
+  bottom: 18px;
+  z-index: 10;
+  background: #168b48;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #0003;
+}
+@media (max-width: 760px) {
+  .hero, .about {
+    grid-template-columns: 1fr;
+  }
+  .hero-logo {
+    max-width: 330px;
+    width: 100%;
+    margin: auto;
+  }
+  .services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .services, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  header {
+    padding: 15px 5%;
+  }
+  nav {
+    gap: 12px;
+  }
+  .hero {
+    padding: 45px 5%;
+  }
+  section {
+    padding: 42px 5%;
+  }
+  .card img {
+    height: 220px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <span>✉ rsamtravelsltd@gmail.com</span>
+  <span>📍 Kaduna, Nigeria | RC 9872335</span>
+</div>
+
+<header>
+  <div class="brand">
+    <div class="logo">R</div>
+    <div>
+      <div class="brand-name">RSAM TRAVELS</div>
+      <small>AND GENERAL MERCHANT LIMITED</small>
+    </div>
+  </div>
   <nav>
-    <a href="#about">About Us</a>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
+    <a href="#about">About Us</a>
     <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>RSAM Travels and General Merchant Limited is committed to providing helpful travel assistance and general merchant services to our customers.</p>
-      <p>Contact our team for enquiries and service information.</p>
-    </section>
+<main>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Travel enquiries and booking assistance</li>
-        <li>Flight booking support</li>
-        <li>Travel information and customer assistance</li>
-        <li>General merchant services</li>
-      </ul>
-    </section>
+<div class="hero" id="home">
+  <div>
+    <div class="kicker">Connecting Journeys, Creating Opportunities</div>
+    <h1>Your Journey Begins With Us</h1>
+    <p>
+      Your travel plans matter to us. Contact RSAM Travels for flight
+      enquiries, Hajj and Umrah, hotel accommodation, visa guidance
+      and student travel assistance.
+    </p>
+    <a class="btn" href="https://wa.me/2347033777134">Chat on WhatsApp</a>
+    <a class="btn btn-blue" href="#services">Explore Services</a>
+    <p><strong>RC Number: 9872335</strong></p>
+  </div>
+  <div class="hero-logo">
+    <div class="globe">🌍 ✈️</div>
+    <strong>RSAM TRAVELS</strong>
+    <small>AND GENERAL MERCHANT LIMITED</small>
+    <p>Connecting Journeys, Creating Opportunities</p>
+  </div>
+</div>
 
-    <section id="contact" class="contact">
-      <h2>Bookings &amp; Enquiries</h2>
-      <p>Call or WhatsApp us:</p>
-      <p><a href="https://wa.me/2347033777134">+234 703 377 7134</a></p>
-      <p><a href="https://wa.me/2348022909694">+234 802 290 9694</a></p>
-      <p><a href="https://wa.me/2349049695116">+234 904 969 5116</a></p>
-      <p><a href="https://wa.me/2348162211019">+234 816 221 1019</a></p>
-      <p>Email: <a href="mailto:rsamtravelsltd@gmail.com">rsamtravelsltd@gmail.com</a></p>
-      <p>Office Address: Nigeria</p>
-    </section>
-  </main>
+<section id="services">
+  <div class="section-heading">
+    <div class="kicker">Our services</div>
+    <h2>Travel Services Made Easier</h2>
+    <p>Contact us to discuss your plans, requirements and available options.</p>
+  </div>
 
-  <footer>
-    <p>&copy; 2026 RSAM Travels and General Merchant Limited. All rights reserved.</p>
-  </footer>
+  <div class="services">
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80"
+      alt="Passenger airplane flying in the sky">
+      <div class="card-content">
+        <h3>Flight Bookings</h3>
+        <p>Flight enquiries, booking assistance and travel itinerary planning.</p>
+        <a href="https://wa.me/2347033777134">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&w=900&q=80"
+      alt="Travel and pilgrimage destination">
+      <div class="card-content">
+        <h3>Hajj &amp; Umrah</h3>
+        <p>Enquiries about pilgrimage travel arrangements and support.</p>
+        <a href="https://wa.me/2348022909694">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+      alt="Hotel swimming pool and accommodation">
+      <div class="card-content">
+        <h3>Hotel Accommodation</h3>
+        <p>Hotel enquiries and accommodation planning for your journey.</p>
+        <a href="https://wa.me/2349049695116">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+      alt="Documents arranged on an office desk">
+      <div class="card-content">
+        <h3>Visa Guidance</h3>
+        <p>General information about visa requirements and travel documents.
+        Visa decisions are made by the relevant authorities.</p>
+        <a href="https://wa.me/2348162211019">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80"
+      alt="Students on a university campus">
+      <div class="card-content">
+        <h3>Student Travel</h3>
+        <p>Travel planning assistance for students preparing to study abroad.</p>
+        <a href="https://wa.me/2347033777134">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+      src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=80"
+      alt="Beautiful mosque architecture">
+      <div class="card-content">
+        <h3>Madina &amp; Sacred Sites</h3>
+        <p>Enquiries about travel arrangements for visits to Madina and other
+        sacred destinations.</p>
+        <a href="https://wa.me/2348022909694">Enquire on WhatsApp →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <img loading="lazy"
+    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1100&q=80"
+    alt="Travel planning with a map">
+  </div>
+  <div>
+    <div class="kicker">About our company</div>
+    <h2>Connecting Journeys, Creating Opportunities</h2>
+    <p>
+      RSAM Travels and General Merchant Limited is based in Kaduna, Nigeria.
+      We help customers make travel enquiries and plan their journeys with
+      clear information and helpful support.
+    </p>
+    <ul>
+      <li>Flight and accommodation enquiries</li>
+      <li>Hajj and Umrah travel assistance</li>
+      <li>Visa information and student travel support</li>
+      <li>Customer service for travel enquiries</li>
+    </ul>
+    <a class="btn" href="#contact">Contact Our Team</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-heading">
+    <div class="kicker">Bookings &amp; enquiries</div>
+    <h2>Talk to RSAM Travels</h2>
+    <p>Call, WhatsApp or email us. We look forward to hearing from you.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-box">
+      <h3>📞 Call &amp; WhatsApp</h3>
+      <p><a href="https://wa.me/2347033777134">07033777134</a></p>
+      <p><a href="https://wa.me/2348022909694">08022909694</a></p>
+      <p><a href="https://wa.me/2349049695116">09049695116</a></p>
+      <p><a href="https://wa.me/2348162211019">08162211019</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>📍 Office Address</h3>
+      <p>
+        Amssco Plaza, Opposite 54 Complex,<br>
+        Race Course Road, Murtala Muhammad Square,<br>
+        Kaduna, Nigeria.
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>✉ Email</h3>
+      <p>
+        <a href="mailto:rsamtravelsltd@gmail.com">
+          rsamtravelsltd@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>🌐 Website &amp; Registration</h3>
+      <p>RC Number: 9872335</p>
+      <p>
+        <a href="https://rsamtravels.github.io/rsam-travels/">
+          Visit Our Website
+        </a>
+      </p>
+      <p>Planned domain: www.rsamtravelsltd.com</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>RSAM Travels and General Merchant Limited</strong><br>
+  Connecting Journeys, Creating Opportunities<br>
+  © 2026 RSAM Travels. All rights reserved.
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/2347033777134" target="_blank" rel="noopener">
+  WhatsApp Us
+</a>
+
 </body>
-</html>
+        </html>
+        
